@@ -37,6 +37,7 @@ body {
     padding: 1rem;
   }
   nav {
+    display: flex;
     text-align: center;
     border: black;
 
