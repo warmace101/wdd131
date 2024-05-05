@@ -1,0 +1,44 @@
+@media screen and (max-width: 450px){
+        
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #84a98c;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header{
+        background-color: #477998;
+        padding: 20px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+dfs    nav a {
+        display: none;
+        
+
+    }
+    nav :hover{
+        color: gold;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1;
+        align-items: center;
+
+    }
+    figure {
+        justify-content: center;
+    }
+    img{
+        align-items: center;
+        width: 400px;
+        height: auto;
+
+    }
+}
