@@ -4,10 +4,9 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-color: #84a98c;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
+        margin: 10px;
+        padding: 10px;
+        max-width: 100%;
     }
 
     header{
@@ -16,29 +15,48 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
+        max-width: 100%;
+    }
+    .menu-toggle{
+        display: flex;
+        cursor: pointer;
+    }
+    .menu-toggle .hamMen{
+        margin-right: 5px;
+    }
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    #main-nav.active{
+        display: flex;
+        
+    }
+    #main-nav a{
+        margin: 10px 0;
     }
 
-dfs    nav a {
+   /* nav a {
         display: none;
         
 
     }
     nav :hover{
         color: gold;
-    }
-    main{
+    } */
+    /* main{
         display: grid;
-        grid-template-columns: 1;
+        grid-template-columns: 1fr;
         align-items: center;
 
-    }
-    figure {
+    } */
+    /* figure {
         justify-content: center;
-    }
+    } */
     img{
-        align-items: center;
-        width: 400px;
+        width: 300px;
         height: auto;
-
+        align-items: center;
     }
 }

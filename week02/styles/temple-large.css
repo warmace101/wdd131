@@ -3,6 +3,8 @@ body {
     background-color: #84a98c;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 header{
