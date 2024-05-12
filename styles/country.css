@@ -1,0 +1,80 @@
+/* Global CSS variables */
+:root {
+    --primary-color: #d21034; /* Red */
+    --secondary-color: #0a3161; /* Blue */
+    --text-color: #333; /* Dark gray */
+}
+
+/* Reset some default browser styles */
+body, header, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font family */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Data section styling */
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Weather section styling */
+#weather {
+    margin-top: 20px;
+}
+
+#weather-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    header, footer {
+        padding: 10px;
+    }
+}
+
+/* Pseudo element for weather icon */
+#weather::after {
+    content: "\2601"; /* Unicode for sun symbol */
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
