@@ -65,8 +65,8 @@ footer {
 }
 
 #middle .overlay{
-    position: fixed;
-    width: 1fr;
+    position:relative;
+    width: 250px;
     height: 1.5fr;
     top: 5em;
     left: 5em;
@@ -75,7 +75,7 @@ footer {
 
 }
 #middle #weather{
-    position: fixed;
+    position: static;
     width: 1fr;
     height: 1fr;
     bottom: 5em;
