@@ -64,6 +64,26 @@ footer {
     margin-bottom: 10px;
 }
 
+#middle .overlay{
+    position: fixed;
+    width: 1fr;
+    height: 1.5fr;
+    top: 5em;
+    left: 5em;
+    background-color: white;
+    z-index: 1;
+
+}
+#middle #weather{
+    position: fixed;
+    width: 1fr;
+    height: 1fr;
+    bottom: 5em;
+    right: 5em;
+    background-color: white;
+
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     header, footer {
