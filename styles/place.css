@@ -31,9 +31,12 @@ main {
 
 /* Image styling */
 img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     margin-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 0;
 }
 
 /* Data section styling */
@@ -68,7 +71,7 @@ footer {
     position:relative;
     width: 250px;
     height: 1.5fr;
-    top: 5em;
+    top: 10px;
     left: 5em;
     background-color: white;
     z-index: 1;
@@ -82,6 +85,10 @@ footer {
     right: 5em;
     background-color: white;
 
+}
+
+#middle {
+    position: relative;
 }
 
 /* Media query for smaller screens */

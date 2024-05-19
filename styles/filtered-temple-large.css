@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #84a98c;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #477998;
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    
+
+}
+nav :hover{
+    color: gold;
+}
+nav a{
+    padding: 10px;  
+    margin: 0 2em;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+figure {
+    justify-content: center;
+}
+img{
+    width: 400px;
+    height: auto;
+
+}
+i.hamMen{
+    display: none;
+}
+.temple-card {
+    display: inline-block;
+    width: calc(33.333% - 32px);
+    margin: 16px;
+}
