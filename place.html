@@ -14,16 +14,19 @@
     </header>
     <main>
         <div id="middle">
-            <img src="images/iceland.webp" srcset="images/iceland-small.webp 400w, images/iceland-medium.webp 750w, images/iceland-large.webp 1500w">
+            <picture>
+                <source media="max-width: 400px" srcset="images/iceland-small.webp">
+                <source media="max-width: 960px" srcset="images/iceland-medium.webp">
+                <img src="images/iceland.webp" alt="Iceland" style="width: auto">
+            </picture>
             <div class="overlay"> 
-
-            <h1>Data:</h1>
-            <h2>Area:</h2><p>39,769 miles^2</p>
-            <h2>Population</h2><p>382,003</p>
-            <h2>Capital:</h2><p>Reykjavik</p>
-            <h2>Languages:</h2><p>Icelandic, English, German, Dutch, French, and Basque</p>
-            <h2>Currency:</h2><p>Krona</p>
-            <h2>Time Zone:</h2><p>Greenwich Mean Time</p>
+                <h1>Data:</h1>
+                <h2>Area:</h2><p>39,769 miles^2</p>
+                <h2>Population</h2><p>382,003</p>
+                <h2>Capital:</h2><p>Reykjavik</p>
+                <h2>Languages:</h2><p>Icelandic, English, German, Dutch, French, and Basque</p>
+                <h2>Currency:</h2><p>Krona</p>
+                <h2>Time Zone:</h2><p>Greenwich Mean Time</p>
             </div>
             <section id="weather">
                 <h1>Weather</h1>
