@@ -112,6 +112,7 @@ footer {
 
 }
 #weather{
+    max-width: 65%;
     position: relative;
     top: 5px;
     left: 58px;
