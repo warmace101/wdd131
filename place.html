@@ -6,7 +6,7 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Johnathan Babb</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Johnathan Babb. Home Page.">
     <meta name="author" content="Johnathan Babb">
-    <link ref="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place.css">
 </head>
 <body>
     <header>
@@ -15,8 +15,8 @@
     <main>
         <div id="middle">
             <picture>
-                <source media="max-width: 400px" srcset="images/iceland-small.webp">
-                <source media="max-width: 960px" srcset="images/iceland-medium.webp">
+                <source media="(max-width: 400px)" srcset="images/iceland-small.webp">
+                <source media="(max-width: 960px)" srcset="images/iceland-medium.webp">
                 <img src="images/iceland.webp" alt="Iceland" style="width: auto">
             </picture>
             <div class="overlay"> 
@@ -30,7 +30,8 @@
             </div>
             <section id="weather">
                 <h2>Weather</h2>
-                <div id="weather-icon" src="images/cloudy-icon.svg"></div>
+                <div id="weather-icon" ></div>
+                <img src="images/cloudy-icon.svg">
                 <p>Wind Chill Factor: <span id="wind-chill"></span></p>
             </section>
         </div>
