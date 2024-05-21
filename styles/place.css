@@ -73,8 +73,6 @@ footer {
 }
  #weather{
     position: absolute;
-    width: 40px;
-    height: auto;
     bottom: 5em;
     right: 15em;
     background-color: lightgreen;
