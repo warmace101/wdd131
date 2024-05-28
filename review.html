@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submission Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Common header content -->
+    </header>
+
+    <main>
+        <h1>Thank you for your review!</h1>
+        <p>Your review has been submitted successfully.</p>
+    </main>
+
+    <footer>
+        <!-- Common footer content -->
+    </footer>
+
+    <script>
+        // Counter using localStorage
+        if (localStorage.getItem('reviewCounter')) {
+            let counter = parseInt(localStorage.getItem('reviewCounter'));
+            counter++;
+            localStorage.setItem('reviewCounter', counter);
+        } else {
+            localStorage.setItem('reviewCounter', 1);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* Add your own styles here */
+
+/* Example style for overall rating stars */
+#overallRating input[type="radio"] {
+    display: none;
+}
+#overallRating label {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+}
+#overallRating label:hover,
+#overallRating label:hover ~ label,
+#overallRating input[type="radio"]:checked ~ label {
+    color: #ffcc00;
+}
