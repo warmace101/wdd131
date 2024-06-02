@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Fireteam - We Stubborn Few Clan</title>
+    <link rel="stylesheet" href="styles/fireteam.css">
+</head>
+<body>
+    <header>
+        <h1>Create a Fireteam</h1>
+        <nav>
+            <a href="project.html">Home Page</a>
+            <a href="fireteam.html">Fireteam</a>
+            <a href="members.html">Members</a>
+        </nav>
+    </header>
+    <main>
+        <section id="create-fireteam">
+            <div class="container">
+                <h2>Create Your Fireteam</h2>
+                <form id="fireteamForm" onsubmit="return validateForm()">
+                    <label for="teamName">Fireteam Name:</label>
+                    <input type="text" id="teamName" name="teamName">
+                    <span class="error" id="teamNameError"></span>
+
+                    <label for="leaderName">Leader Name:</label>
+                    <input type="text" id="leaderName" name="leaderName">
+                    <span class="error" id="leaderNameError"></span>
+
+                    <label for="activity">Activity Type:</label>
+                    <select id="activity" name="activity">
+                        <option value="">Select an activity</option>
+                        <option value="raid">Raid</option>
+                        <option value="strike">Strike</option>
+                        <option value="crucible">Crucible</option>
+                        <option value="gambit">Gambit</option>
+                    </select>
+                    <span class="error" id="activityError"></span>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <span class="error" id="dateError"></span>
+
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time">
+                    <span class="error" id="timeError"></span>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                    <span class="error" id="descriptionError"></span>
+
+                    <input type="submit" value="Create Fireteam">
+                </form>
+                <div id="fireteamList">
+                    <h3>Created Fireteams</h3>
+                    <ul></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 We Stubborn Few Clan. All Rights Reserved.</p>
+    </footer>

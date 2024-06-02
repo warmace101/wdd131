@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+}
+header {
+    background-color: #2E8B57;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    color: #FFD700;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+nav a {
+    margin: 0 15px;
+    color: #FFD700;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #2E8B57;
+}
+section {
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+form {
+    background-color: #555;
+    padding: 20px;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #2E8B57;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f2f2f2;
+}
+input[type="submit"] {
+    background-color: #2E8B57;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+input[type="submit"]:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+.error {
+    color: #FFD700;
+}
+.clan-members, .events {
+    display: flex;
+    flex-wrap: wrap;
+}
+.clan-members div, .events div {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #2E8B57;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2E8B57;
+    color: #FFD700;
+}
