@@ -11,36 +11,71 @@
 <body>
     <header>Product Review</header>
     <main>
-        <form action="review.html" method="get" id="reviewForm">
-            <label for="productName">Product Name:</label>
-            <select id="productName" name="productName" required>
-                <option value="" disabled selected>Select a Product ...</option>
-            </select>
+        <form action="review.html" method="get">
 
-            <label for="overallRating">Overall Rating:</label>
-            <div id="overallRating">
-                <input type="radio" id="star1" name="rating" value="1" required><label for="star1">&#9733;</label>
-                <input type="radio" id="star2" name="rating" value="2" required><label for="star2">&#9733; &#9733;</label>
-                <input type="radio" id="star3" name="rating" value="3" required><label for="star3">&#9733; &#9733; &#9733;</label>
-                <input type="radio" id="star4" name="rating" value="4" required><label for="star4">&#9733; &#9733; &#9733; &#9733;</label>
-                <input type="radio" id="star5" name="rating" value="5" required><label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+            <!-- Product Name -->
+            <div>
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- Dynamically populate options using JavaScript -->
+                </select>
             </div>
-
-            <label for="installationDate">Date of Installation:</label>
-            <input type="date" id="installationDate" name="installationDate" required>
-
-            <label>Useful Features:</label>
-            <div id="usefulFeatures">
-                <!-- Dynamically populated checkboxes will go here -->
+        
+            <!-- Overall Rating -->
+            <div>
+                <label for="rating">Overall Rating:</label><br>
+                <input type="radio" id="1star" name="rating" value="1" required><label for="1star">☆</label>
+                <input type="radio" id="2star" name="rating" value="2" required><label for="2star">☆☆</label>
+                <input type="radio" id="3star" name="rating" value="3" required><label for="3star">☆☆☆</label>
+                <input type="radio" id="4star" name="rating" value="4" required><label for="4star">☆☆☆☆</label>
+                <input type="radio" id="5star" name="rating" value="5" required><label for="5star">☆☆☆☆☆</label>
             </div>
-
-            <label for="writtenReview">Written Review:</label>
-            <textarea id="writtenReview" name="writtenReview"></textarea>
-
-            <label for="userName">User Name:</label>
-            <input type="text" id="userName" name="userName">
-
-            <input type="submit" value="Submit Review">
+        
+            <!-- Date of Installation -->
+            <div>
+                <label for="installationDate">Date of Installation:</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+        
+            <!-- Useful Features -->
+            <div>
+                <label>Useful Features:</label><br>
+                <input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1">
+                <label for="feature1">Feature 1</label><br>
+                <input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2">
+                <label for="feature2">Feature 2</label><br>
+                <!-- Add more features as needed -->
+            </div>
+        
+            <!-- Written Review -->
+            <div>
+                <label for="writtenReview">Written Review:</label><br>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
+            </div>
+        
+            <!-- User Name -->
+            <div>
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" name="userName">
+            </div>
+        
+            <!-- Submission Button -->
+            <div>
+                <input type="submit" value="Submit Review">
+            </div>
+        
         </form>
+        
     </main></body>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            <p> &copy; - 2024, Johnathan Babb, Idaho</p>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
+
 </html>

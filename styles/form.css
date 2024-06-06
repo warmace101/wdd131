@@ -1,16 +1,67 @@
-/* Add your own styles here */
-
-/* Example style for overall rating stars */
-#overallRating input[type="radio"] {
-    display: none;
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#overallRating label {
-    font-size: 24px;
-    color: #ddd;
+
+/* Basic styling for the form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for form fields */
+form div {
+    margin-bottom: 20px;
+}
+form div.rating {
+    display: flex;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
     cursor: pointer;
 }
-#overallRating label:hover,
-#overallRating label:hover ~ label,
-#overallRating input[type="radio"]:checked ~ label {
-    color: #ffcc00;
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for checkbox and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Styling for the footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
 }
